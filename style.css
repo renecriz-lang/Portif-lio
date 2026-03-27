@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background: linear-gradient(-45deg, #000000, #015475, #020b25, #122a61);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+    @keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #8b5cf6;
+}
+
+header {
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+
+}
+
+
+th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px 20px;
+    line-height: 1;
+}
+
+td {
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav a:hover {
+    cursor: pointer;
+}
+
+.container_inicio {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* centraliza o conjunto */
+    gap: 0px; /* espaço entre as caixas */
+    flex-wrap: wrap; /* quebra no mobile */
+    align-items: flex-start;
+}
+
+
+.inicio {
+    position: relative;
+    background: #00060f;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 64, 238, 0.445);
+    margin: 60px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.perfil {
+    position: relative;
+    background: #00060f;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 64, 238, 0.445);
+    margin: 60px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 20px;
+    transition: 0.3s;
+    overflow: visible;
+    padding-right: 240px;
+    min-height: 300px;
+
+}
+
+.perfil:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+.inicio-texto h2 {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background: #010127;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+
+.inicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+.inicio-texto h1 {
+    font-size: 40px;
+}
+
+.inicio-texto span {
+    color: #8b5cf6;
+}
+
+.inicio-texto p {
+    font-size: 20px;
+    margin-top: 10px;
+    
+    color: #ffffff;
+}
+
+
+.btn {
+    position: fixed;
+    top: 700px;
+    left: 30px;
+    display: flex;
+    background: #010127;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 64, 238, 0.445);
+    margin: 20px;
+    padding: 15px;
+    gap: 20px;
+}
+
+.btn p {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    background: #010127;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+.projects {
+    padding: 40px;
+    text-align: center;
+}
+
+.foto-perfil {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 210px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-left: 0px;
+    background: transparent;
+    filter: drop-shadow(0 0 10px rgba(0, 140, 255, 0.6));
+
+}
+
+
+
+.menu {
+    background: #00060f;
+
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 27, 100, 0.445);
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: fit-content;
+
+}
+
+.submenu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;  
+}
+
+.submenu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.menuv {
+    position: fixed;
+    top: 200px;
+    left: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #262f3b;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 64, 238, 0.445);
+    margin: 20px;
+    padding: 15px;
+    gap: 20px;
+  }
+
+.submenuv {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 12px; 
+ 
+}
+
+.submenuv a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px; 
+}
+
+.submenuv p {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    background: #010127;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+    font-size: 12px;
+}
+.submenuv p:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.submenuv img {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+.menuv:hover {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.menu:hover {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+.submenu p {
+    border-radius: 10px;
+    
+    background: #252549;
+    padding: 10px 20px;
+    margin: 0;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.submenu p:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    margin-top: 30px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card p {
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8b5cf6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#tabela-habilidades {
+    scroll-margin-top: 80px;
+}
+
+#hobbies {
+    scroll-margin-top: 80px;
+}
+
+#sobre {
+    scroll-margin-top: 80px;
+}
+
+#objetivos {
+    scroll-margin-top: 80px;
+}
